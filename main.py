@@ -13,6 +13,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+
 @app.get("/ping")
 def ping():
     return {"message": "pong"}
